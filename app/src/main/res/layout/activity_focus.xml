@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FocusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/focusableNotSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="A: focusable is not set" />
+
+        <TextView
+            android:id="@+id/unfocusable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:focusable="false"
+            android:padding="8dp"
+            android:text="B: focusable is false" />
+
+        <TextView
+            android:id="@+id/focusable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="C: focusable is true" />
+
+        <TextView
+            android:id="@+id/focusableInTouchMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:focusableInTouchMode="true"
+            android:padding="8dp"
+            android:text="D: focusableInTouchMode is true" />
+
+        <TextView
+            android:id="@+id/focusableInTouchMode2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:focusableInTouchMode="true"
+            android:padding="8dp"
+            android:text="E: focusableInTouchMode is true" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="button1" />
+
+        <Button
+            android:id="@+id/buttonTouchMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:text="button2: focusableInTouchMode is true" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
